@@ -1,0 +1,28 @@
+{
+  "name": "discord-webhook",
+  "version": "0.1.0",
+  "description": "帮助社区频道能透过代码发布自定义的消息",
+  "main": "index.js",
+  "scripts": {
+    "start:redmine": "node redmine.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeeDAO-OpenSource/discord-webhook.git"
+  },
+  "author": "SeeDAO-OpenSource",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SeeDAO-OpenSource/discord-webhook/issues"
+  },
+  "homepage": "https://github.com/SeeDAO-OpenSource/discord-webhook#readme",
+  "dependencies": {
+    "discord-webhook-node": "^1.1.8",
+    "dotenv": "^16.0.3",
+    "javascript-time-ago": "^2.5.9",
+    "node-fetch": "^3.3.0",
+    "node-redmine": "^0.2.2"
+  }
+}
