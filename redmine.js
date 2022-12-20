@@ -51,7 +51,7 @@ server.listen(process.env.SERVER_PORT, () => {
       (err, data) => {
         if (err) console.log(err)
         const last = getLastId(data.issues)
-        if (prevId !== null && last.id !== null && prevId !== last.id) {
+        if (prevId !== null && last.id !== null && Number(prevId) < Number(last.id)) {
           console.log("new issue !")
           const issue = data.issues[last.idx]
           issueInfo(issue)
